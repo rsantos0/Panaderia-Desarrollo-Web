@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <link rel="stylesheet" type='text/css' media='screen' href="../CSS/estilo.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+
+        <link href="../scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+		<link rel="stylesheet" href="../scripts/font-awesome/css/font-awesome.min.css">
+	
+		<script src="../scripts/sweetalert2/sweetalert2.all.min.js"></script>
+
+		<script src="../scripts/sweetalert2/sweetalert2.min.js"></script>
+		<link rel="stylesheet" href="../scripts/sweetalert2/sweetalert2.min.css">
+
+    <title>Proveedores</title>
+
+<body>
+    <!-- CABECERA -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="#"><img src="../Imagen/logoPri.png" class="logo" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../Imagen/mostrar.png" class="iconic iconic-md" alt="menu">
+            </button>
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html" target="_blank">Inicio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../Pages/CatalogoProductos.html" target="_blank">Productos</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../Pages/OrdenCompra.html" target="_blank">Ordenes de
+                                Compra</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../Pages/RegistroProducto.html" target="_blank">Registro
+                                Productos</a>
+                        </li>
+
+
+                    </ul>
+                    <div class="col-1 col-md-2 col-lg-1">
+                        <a class="nav-link dropdown-toggle pull-right" id="userDropdown" href="#" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                class="fa fa-user"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">Configuración</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" id="opCerrarSesion"
+                                onclick="CerrarSesion('../pages/login.html');">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="container-fluid">
+        <h2 class="text-center">PROVEEDORES</h2>
+        <div class="row mt-3 mb-3">
+            <div class="col-xl-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="fas fa-chart-area mr-1"></i>
+                        Formulario
+                    </div>
+                    <div class="card-body">
+                        <div class="mr-2 ml-2">
+                            <form id="formData">
+                                <input type="text" name="ProveedorId" id="txtProveedorId" hidden>
+                                <div class="form-group row">
+                                    <label for="txtNombre">Nombre</label>
+                                    <input type="text" class="form-control " name="Nombre" id="txtNombre" required>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="txtDireccion">Dirección</label>
+                                    <input type="text" class="form-control " name="Direccion" id="txtDireccion" required>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="txtTelefono">Teléfono</label>
+                                    <input type="tel" class="form-control " name="Telefono" id="txtTelefono" required>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="txtCorreo">Correo</label>
+                                    <input type="email" class="form-control " name="Correo" id="txtCorreo" required>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="txtNit">NIT</label>
+                                    <input type="text" class="form-control " name="NIT" id="txtNit" required>
+                                </div>
+                               
+                                <div class="form-group row mt-3">
+                                    <input type="button" class="btn btn-success" id="btnAddProveedor" value="Guardar">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa fa-table mr-1"></i>
+                        Proveedores
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dtProveedores" width="100%" cellspacing="0">
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- PIE DE PAGINA -->
+    <footer class="footer-grid">
+        <div class="contenedor contenedor-footer">
+            <p class="copyraid">&copy; 2020 Rony Santos</p>
+            <p>Universidad Mariano Galvez</p>
+            <p>Cuilapa Santa Rosa Guatemala</p>
+        </div>
+    </footer>
+    
+
+
+   <!--  <script src="../js/index.js"></script> -->
+		<script src="../js/proveedores.js"></script>
+</body>
+
+</html>

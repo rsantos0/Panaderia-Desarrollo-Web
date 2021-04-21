@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' media='screen' href="../CSS/estilos.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="../CSS/estilo.css">
+
+    <title>Logueate</title>
+    
+    <link href="../scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="../scripts/font-awesome/css/font-awesome.min.css">
+    
+    <script src="../scripts/sweetalert2/sweetalert2.all.min.js"></script>
+
+    <script src="../scripts/sweetalert2/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="../scripts/sweetalert2/sweetalert2.min.css">
+</head>
+
+<body>
+    <!-- CABECERA -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="#"><img src="../Imagen/logoPri.png" class="logo" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../Imagen/mostrar.png" class="iconic iconic-md" alt="menu">
+            </button>
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <P style="color:white">BIENVENIDO A PASTELERIA NANI</P> 
+
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+ 
+
+    <!--CONTENIDO PRINCIPAL -->
+    <div class="fondo">
+        <h2 class="fw centrar">LEGUEATE</h2>
+
+        <main>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card shadow-lg border-0 rounded-lg mt-5">
+                            <div class="card-header">
+                                <img src="../Imagen/logoPri.png" id="imagenLogin" alt="Imagen-Login" />
+                                <h3 class="text-center font-weight-light mt-2 mb-4">Iniciar sesión</h3>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label class="small mb-1" for="txtUsuario">Usuario</label>
+                                        <input class="form-control py-4" id="txtUsuario" type="email"
+                                            placeholder="Ingresar Usuario" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="small mb-1" for="txtContrasenia">Contraseña</label>
+                                        <input class="form-control py-4" id="txtContrasenia" type="password"
+                                            placeholder="Ingresar Contraseña" />
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="custom-control-input" id="ckRecordarContrasenia"
+                                                type="checkbox" />
+                                            <label class="custom-control-label" for="ckRecordarContrasenia">Recordar
+                                                Contraseña</label>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+                                        <a class="small" href="#">¿Olvido su contraseña?</a>
+                                        <a class="btn btn-primary text-white" id="btnAcceder">Acceder</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="small"><a href="registrate.html"> ¿Necesitas una cuenta? <br> ¡Regístrate aquí! </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- PIE DE PAGINA -->
+    <footer class="footer-grid">
+        <div class="contenedor contenedor-footer">
+            <p class="copyraid">&copy; 2020 Rony Santos</p>
+            <p>Universidad Mariano Galvez</p>
+            <p>Cuilapa Santa Rosa Guatemala</p>
+        </div>
+    </footer>
+
+        
+    <script src="../scripts/jquery/jquery.min.js"></script>
+    <script src="../scripts/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>

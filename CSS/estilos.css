@@ -1,0 +1,132 @@
+/* 
+
+* {
+    font-family: "Arial Unicode MS";
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+} 
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+} 
+
+
+ body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+ 
+
+ img {
+    max-width: 100%;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+.contenedor {
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw {
+    font-weight: 300;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.d-block {
+    display: block!important;
+}
+.contenido-centrado {
+    max-width: 800px;
+}
+
+*/
+.fondo{
+    background-color: #369681;
+    padding: 2rem;
+    width: 100%;
+}
+
+
+ fieldset{
+    background-color:rgb(3, 2, 66);
+       
+    }
+   
+@media (min-width:768px){
+ fieldset{
+ background-color:rgb(3, 2, 66);
+ width: 50%;
+ margin: auto;
+    
+ }
+
+ fieldset p{
+   color: white;
+   font-size: 2rem;    
+    }
+}
+
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+   padding-left: 1rem;
+   color: white;
+}
+
+input, button {
+    padding: 1rem;
+    display: block;
+    width: 95%;
+    background-color: #e1e1e1;
+    border-radius: .8rem; 
+    margin: auto;
+    margin-bottom: 1rem;
+    
+} 
+.terminos {
+    padding: 1rem;
+    display: block;
+    width: 95%;
+    background-color:rgb(3, 2, 66);
+    border-radius: 2rem; 
+    margin: auto;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    
+} 
+.terminos:hover{
+    background-color: darkcyan;
+}
+fieldset p {
+    text-align: center;
+    color: white;
+}
+
+ 
